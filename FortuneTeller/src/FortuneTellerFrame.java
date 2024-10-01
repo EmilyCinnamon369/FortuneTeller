@@ -88,6 +88,14 @@ public class FortuneTellerFrame extends JFrame {
         });
 
         JButton quit_butt = new JButton("Quit");
+        quit_butt.setBounds(440, 515, 200, 25);
+        quit_butt.setFont(fonty_jr);
+        quit_butt.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
 
         add(jabel);
         add(jane);
